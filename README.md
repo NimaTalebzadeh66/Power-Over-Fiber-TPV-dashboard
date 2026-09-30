@@ -11,7 +11,7 @@ Python · Tkinter · NumPy · Matplotlib
 
 ## Dashboard preview
 
-![Power over fiber dashboard preview](docs/images/dashboard_preview.png)
+![Power over fiber dashboard preview](dashboard_preview.png)
 
 ## What it does
 
