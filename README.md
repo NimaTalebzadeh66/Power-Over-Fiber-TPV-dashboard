@@ -24,21 +24,21 @@ Python · Tkinter · NumPy · Matplotlib
 
 ## Physical model
 
-Attenuation \(\alpha(\lambda)\) is in dB/km. At wavelength \(\lambda\) and distance \(L\) in km, the model calculates transmission as
+Attenuation $\alpha(\lambda)$ is in dB/km. At wavelength $\lambda$ and distance $L$ in km, the model calculates transmission as
 
-\[
+$$
 T(\lambda,L)=10^{-\alpha(\lambda)L/10}.
-\]
+$$
 
 The in-band retention shown in each result is
 
-\[
-R_{\mathrm{band}}=\frac{\int_{\lambda_{\min}}^{\lambda_{\max}}S(\lambda)T(\lambda,L)\,d\lambda}
-{\int_{\lambda_{\min}}^{\lambda_{\max}}S(\lambda)\,d\lambda},
-\]
+$$
+R_{\mathrm{band}}=
+\frac{\int_{\lambda_{\min}}^{\lambda_{\max}} S(\lambda)T(\lambda,L)\,\mathrm{d}\lambda}
+{\int_{\lambda_{\min}}^{\lambda_{\max}} S(\lambda)\,\mathrm{d}\lambda}.
+$$
 
-where \(S(\lambda)\) is the input blackbody spectrum. The default bands are 300–1100 nm for Si, 300–1700 nm for GaSb, and 300–2500 nm for InGaAsSb. A custom interval can be selected within 300–2500 nm.
-
+Here, $S(\lambda)$ is the input blackbody spectrum. The default bands are 300–1100 nm for Si, 300–1700 nm for GaSb, and 300–2500 nm for InGaAsSb. A custom interval can be selected within 300–2500 nm.
 The displayed W/cm² estimate weights the transmitted spectrum by Planck's law and scales it to the supplied total emissive exitances: 28.7 W/cm² at 1500 K, 90.7 W/cm² at 2000 K, and 221.5 W/cm² at 2500 K. It assumes all hemispherical emission is launched into the fiber. It does not include fiber coupling loss, receiver absorptance, PV temperature effects, or electrical conversion efficiency. It represents an optical flux per emitter area, not the actual power in watts at the fiber output.
 
 ## Data handling and limits
