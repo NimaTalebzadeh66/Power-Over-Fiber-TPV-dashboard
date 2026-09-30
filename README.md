@@ -1,6 +1,6 @@
 <img align="right" width="230" src="pof_hero.png" alt="Thermal source transferring power to drones over fiber">
 
-# Thermal Power over Fiber Dashboard
+# Optical Power over Fiber Dashboard
 
 Interactive desktop tool for estimating how much blackbody emission remains in selected photovoltaic wavelength bands after transmission through an optical fiber.
 
